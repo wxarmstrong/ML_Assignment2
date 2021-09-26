@@ -14,15 +14,14 @@ import csv
 
 dataSets = ['contact_lens_training_1.csv', 'contact_lens_training_2.csv', 'contact_lens_training_3.csv']
 
-#putting the dictionaries outside the scope of the for loop to ensure that the numbering stays consistent for all training features
-num_attributes = -1
-valCounter = []
-valdict = {}
-
-yCounter = -1
-yDict = {}
-
 for ds in dataSets:
+
+    num_attributes = -1
+    valCounter = []
+    valdict = {}
+
+    yCounter = -1
+    yDict = {}
 
     dbTraining = []
     X = []
